@@ -532,6 +532,9 @@ def train_loop(
                                          os.path.join(model_dir, 'train'))
   summary_writer = tf.compat.v2.summary.create_file_writer(
       summary_writer_filepath)
+  print("###################")
+  print(summary_writer_filepath)
+  print("###################")
 
   if use_tpu:
     num_steps_per_iteration = 100
